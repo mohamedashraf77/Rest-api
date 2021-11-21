@@ -18,7 +18,8 @@ from django.urls import path, include
 from . import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('movie/api/v1/', include('movies.api.v1.urls'))
+    path('movie/api/v1/', include('movies.api.v1.urls')),
+    path('account/api/v1/', include('account.api.v1.urls'))
 ]
 
 if settings.DEBUG:

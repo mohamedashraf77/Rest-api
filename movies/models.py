@@ -6,7 +6,7 @@ class Movie(models.Model):
     realese_date = models.DateTimeField()
     cast = models.ManyToManyField('Cast', null= True, blank=True)
     cat = models.ManyToManyField('Category', null= True, blank=True)
-    panner = models.ImageField(upload_to= 'movies/panner', null= True)
+    panner = models.ImageField(upload_to= 'movies/panner', null= True, blank=True)
 
 
 class Category(models.Model):
